@@ -3,6 +3,7 @@ package com.bridgelabzGambling2;
 import java.util.Scanner;
 
 public class Gambling2 {
+
     static int totalWinnigAmount = 0;
     static int winDaysCount = 0;
     static int lossDaysCount = 0;
@@ -17,14 +18,17 @@ public class Gambling2 {
             Scanner scanner = new Scanner(System.in);
             if (scanner.next().equalsIgnoreCase("y")){
                 Gambler();
+
             }
         }else if (totalWinnigAmount < 0){
             System.out.println("you lost the game");
         }else{
+
             System.out.println("no win or no loss");
         }
 
     }
+
 
     static void Gambler() {
         for (int day = 1; day < MAX_DAYS; day++) {
